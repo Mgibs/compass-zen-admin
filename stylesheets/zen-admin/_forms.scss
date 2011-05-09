@@ -1,0 +1,41 @@
+fieldset {
+  legend {
+    display: none;
+  }
+  ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+      margin: 1em 0;
+    }
+    li.boolean {
+      input {
+        margin-right: 10px;
+      }
+    }
+    li.date {
+      @include clearfix;
+      ol li {
+        float: left;
+        margin-right: 1em;
+      }
+    }
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+  }
+
+  textarea {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+}
+
+fieldset.buttons {
+  li {
+    float: left;
+    margin-right: 0.5em;
+  }
+}

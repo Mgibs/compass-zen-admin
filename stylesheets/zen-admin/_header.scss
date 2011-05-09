@@ -1,0 +1,81 @@
+header#header {
+  background: #36393D;
+  padding: 1.5em 1.5em 0 1.5em;
+  h1 {
+    color: #fff;
+    font-size: 44px;
+    line-height: 1em;
+    letter-spacing: -1px;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    @include text-shadow(#000, 1px, 1px, 0)
+  }
+
+  nav {
+    @include clearfix;
+    @include border-top-radius(5px);
+    background: #000;
+    li {
+      float: right;
+      padding: 0.5em 1em 0.5em 1em;
+      font-weight: bold;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      padding: 2px 6px;
+      &.logout {
+        background: #C00;
+        @include border-radius(3px);
+      }
+    }
+    ul.main {
+      float: left;
+      li {
+        float: left;
+      }
+    }
+    ul.user {
+      float: right;
+    }
+  }
+}
+
+body.posts header#header {
+  ul.user, ul.main {
+    li.posts {
+      background: #fff;
+      color: #000;
+      @include border-top-radius(5px);
+      a {
+        color: #000;
+      }
+    }
+  }
+}
+
+body.memories header#header {
+  ul.user, ul.main {
+    li.memories {
+      background: #fff;
+      color: #000;
+      @include border-top-radius(5px);
+      a {
+        color: #000;
+      }
+    }
+  }
+}
+
+body.members header#header {
+  ul.user, ul.main {
+    li.members {
+      background: #fff;
+      color: #000;
+      @include border-top-radius(5px);
+      a {
+        color: #000;
+      }
+    }
+  }
+}
