@@ -2,6 +2,9 @@
 @import "zen-admin/base";
 
 @import "html5-boilerplate";
+@import "compass/css3";
+
+@include html5-boilerplate;
 
 @import "zen-admin/header";
 @import "zen-admin/flash";
