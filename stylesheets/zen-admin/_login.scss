@@ -2,7 +2,7 @@ body.sessions {
   .login {
     width: 500px;
     margin: 50px auto;
-    
+
     h2 {
       font-size: 22px;
       font-weight: bold;
@@ -13,7 +13,7 @@ body.sessions {
       @include border-top-left-radius(4px);
       @include border-top-right-radius(4px);
     }
-    
+
     .content {
       background: #fff;
       padding: 20px 20px;
@@ -21,17 +21,17 @@ body.sessions {
       @include border-bottom-left-radius(4px);
       @include border-bottom-right-radius(4px);
     }
-    
+
     p {
       margin: 1em 0;
     }
-    
+
     input[type=email], input[type=password] {
       font-size: 16px;
       padding: 5px 3px;
       font-weight: bold;
     }
-    
+
     input[type=checkbox] {
       vertical-align: middle;
     }
