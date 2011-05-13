@@ -1,5 +1,5 @@
 body {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: $font-family-application
   background: #CFCFCF;
 }
 
@@ -12,7 +12,7 @@ body {
 
   .box {
     header {
-      background: #36393D;
+      background: $background-box-header-color;
       @include border-top-radius(5px);
       h1 {
         color: #fff;
@@ -35,7 +35,7 @@ body {
       th {
         padding: 10px;
         text-align: left;
-        background: #36393D;
+        background: $background-table-list-color;
         &.first {
           @include border-top-left-radius(5px);
         }
